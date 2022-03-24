@@ -9,10 +9,26 @@ public class LevelLoader : MonoBehaviour
 
     public float transitionTime = 1f;
 
+    public static bool IsDoubleTap(){ //removable
+         bool result = false;
+         float MaxTimeWait = 1;
+         float VariancePosition = 1;
+ 
+         if( Input.touchCount == 3  && Input.GetTouch(0).phase == TouchPhase.Began)
+         {
+             float DeltaTime = Input.GetTouch (0).deltaTime;
+             float DeltaPositionLenght=Input.GetTouch (0).deltaPosition.magnitude;
+ 
+             if ( DeltaTime> 0 && DeltaTime < MaxTimeWait && DeltaPositionLenght < VariancePosition)
+                 result = true;                
+         }
+         return result;
+     }
+
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetMouseButtonDown(1))
+        if(IsDoubleTap()==true)//(Input.GetKeyDown("space"))//if(Input.GetMouseButtonDown(1))
         {
             LoadNextLevel();
         }
