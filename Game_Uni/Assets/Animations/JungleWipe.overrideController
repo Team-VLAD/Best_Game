@@ -1,0 +1,15 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: JungleWipe
+  m_Controller: {fileID: 9100000, guid: 68735d62ff23c374fb3c8c0b4877289f, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 8d05a68e7fcbc9d4292dee2afb51e1a0, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 95a26b4de5314af4dba0dac0c5d2bf99, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 834bb6077a92cbb4480aae5d8418fc52, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 4aa29e00e8248724e95480da42d33db6, type: 2}
